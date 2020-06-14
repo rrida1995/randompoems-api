@@ -1,4 +1,4 @@
-# service-api
+# randompoems-api
 Simple API service usage.
 Randompoems API service is taken from any-api.com
 
