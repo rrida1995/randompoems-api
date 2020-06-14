@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="col-12 ml-auto mr-auto">
+      <form class="form" autocomplete="off">
+          <div class="card ">
+            <div class="card-header">
+              <h5>RANDOM POEMS</h5>
+            </div>
+              <div class="card-body">
+                <!-- loop data poems fetched from API service -->
+                  <div class="row" *ngFor="let data of poems">
+                    <div class="col-12">
+                      <div class="card justify-content-center">
+                        <div class="card-header">
+                          {{data.title}}
+                        </div>
+                        <div class="card-body">
+                          {{data.content}}
+                        </div>
+                        <div class="card-footer">
+                          Author: {{data.poet.name}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row"><div class="col-12">&nbsp;</div></div>
+                  </div>
+              </div>
+              <div class="card-footer ">
+                  <h5>Powered by <a href="https://any-api.com/poemist_com/poemist_com/console/_randompoems/randompoems" target="_blank">randompoemsAPI</a></h5>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
